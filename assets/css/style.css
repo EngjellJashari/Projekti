@@ -79,6 +79,7 @@ body {
 /* Featured & Sections */
 .featured, .about-section, .products-section, .contact-section, .form-section, .detail-section {
   padding: 120px 5%;
+  padding-top: 140px;
   text-align: center;
   background: #111;
 }
