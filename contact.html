@@ -6,6 +6,7 @@
   <title>Contact - Auto Heaven</title>
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
@@ -24,16 +25,130 @@
   </nav>
 
   <section class="contact-section">
-    <h1>Kontakto</h1>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Emri" required />
-      <span class="error"></span>
-      <input type="email" id="email" placeholder="Email" required />
-      <span class="error"></span>
-      <textarea id="message" placeholder="Mesazhi" required></textarea>
-      <span class="error"></span>
-      <button type="submit">Dërgo</button>
-    </form>
+    <div class="contact-fullwidth">
+  
+      <!-- Hero-style Header për Contact -->
+      <div class="contact-header">
+        <h1 class="section-title">Kontakto</h1>
+        <p class="section-subtitle">Jemi këtu për të ndihmuar! Na kontaktoni për çdo pyetje apo konsultim rreth produkteve tona.</p>
+      </div>
+  
+      <!-- Main Layout – tani 100% width -->
+      <div class="main-layout">
+        <!-- Form -->
+        <div class="contact-form-card">
+          <h2>Dërgo Mesazh</h2>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Emri juaj" required />
+            <span class="error"></span>
+            <input type="email" id="email" placeholder="Email juaj" required />
+            <span class="error"></span>
+            <input type="tel" id="phone" placeholder="Telefoni (opsional)" />
+            <select id="subject">
+              <option value="">Zgjidhni Temën</option>
+              <option value="info">Informacion për Produkte</option>
+              <option value="consultation">Konsultim për Tuning</option>
+              <option value="installation">Rezervim për Instalim</option>
+              <option value="support">Mbështetje Teknike</option>
+              <option value="other">Tjetër</option>
+            </select>
+            <textarea id="message" placeholder="Mesazhi juaj" required rows="6"></textarea>
+            <span class="error"></span>
+            <button type="submit" class="submit-btn">Dërgo Mesazhin</button>
+          </form>
+        </div>
+  
+        <!-- Info + Social -->
+        <div class="contact-info-wrapper">
+          <div class="info-card">
+            <h2>Informacione Kontakti</h2>
+            <div class="info-item"><span class="icon">📍</span><div><h3>Adresa</h3><p>Rruga Dëshmorët e Kombit<br>Tirana, Shqipëri<br>1001</p></div></div>
+            <div class="info-item"><span class="icon">📞</span><div><h3>Telefoni</h3><p><a href="tel:+355691234567">+355 69 123 4567</a><br><a href="tel:+35542234567">+355 4 223 4567</a></p></div></div>
+            <div class="info-item"><span class="icon">✉️</span><div><h3>Email</h3><p><a href="mailto:info@autoheaven.al">info@autoheaven.al</a><br><a href="mailto:support@autoheaven.al">support@autoheaven.al</a></p></div></div>
+            <div class="info-item"><span class="icon">🕐</span><div><h3>Orët e Punës</h3><p>E Hënë - E Premte: 08:00 - 18:00<br>E Shtunë: 09:00 - 15:00<br>E Dielë: E Mbyllur</p></div></div>
+          </div>
+  
+          <div class="social-card">
+            <h2>Na Ndiqni</h2>
+            <p>Ndiqni neve në rrjetet sociale për oferta speciale.</p>
+            <div class="social-links">
+              <a href="#" class="social-link"><span class="icon">📘</span><div><strong>Facebook</strong><span>@AutoHeaven</span></div></a>
+              <a href="#" class="social-link"><span class="icon">📷</span><div><strong>Instagram</strong><span>@autoheaven</span></div></a>
+              <a href="#" class="social-link"><span class="icon">💬</span><div><strong>WhatsApp</strong><span>+355 69 123 4567</span></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Stats + Services + FAQ – full width -->
+      <div class="bottom-sections">
+        <div class="stats-services">
+          <!-- Statistics Section -->
+          <div class="stats-card">
+            <h2>Statistikat Tona</h2>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <h3>Vjet Përvojë</h3>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <h3>Klientë</h3>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15K+</div>
+                <h3>Pjesë</h3>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <h3>Mbështetje</h3>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Services Section -->
+          <div class="services-card">
+            <h2>Shërbimet Tona</h2>
+            <div class="services-grid">
+              <div class="service-item">
+                <div class="service-icon">🔧</div>
+                <h3>Instalim</h3>
+              </div>
+              <div class="service-item">
+                <div class="service-icon">💻</div>
+                <h3>ECU Tuning</h3>
+              </div>
+              <div class="service-item">
+                <div class="service-icon">🎯</div>
+                <h3>Konsultim</h3>
+              </div>
+              <div class="service-item">
+                <div class="service-icon">🛡️</div>
+                <h3>Garancion</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="faq-card">
+          <h2>Pyetje të Shpeshta</h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h3>Sa kohë duhet për instalim?</h3>
+              <p>Instalimi i sistemeve shkarkimi zgjat 2-4 orë, varësisht nga modeli i makinës.</p>
+            </div>
+            <div class="faq-item">
+              <h3>A ofroni garancion?</h3>
+              <p>Po, të gjitha produktet vijnë me garancion 1-3 vjet, varësisht nga produkti.</p>
+            </div>
+            <div class="faq-item">
+              <h3>A mund të porosisni pjesë të veçanta?</h3>
+              <p>Po, mund të porosisim pjesë të veçanta për çdo model makine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="assets/js/forms.js"></script>
