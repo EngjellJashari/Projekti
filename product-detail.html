@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail - Auto Heaven</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Auto Heaven</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="user-area">
+      <span id="userGreeting"></span>
+      <a href="login.html" id="loginLink" class="btn">Login</a>
+      <button id="logoutBtn" class="btn logout">Logout</button>
+    </div>
+  </nav>
+
+  <section class="detail-section">
+    <h1>Detajet e Produktit</h1>
+    <p>ID: <span id="productId"></span></p>
+    <p>Këtu detajet bazuar në ?id= në URL.</p>
+  </section>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    document.getElementById('productId').textContent = urlParams.get('id') || 'N/A';
+  </script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
